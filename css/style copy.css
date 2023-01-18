@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+}
+
+:root{
+    --main-color:#3e1c63;
+    --secondary-color:#fb557e;
+    --main-font-size :2.5rem;
+    --secondary-font-size: 2.25rem;
+    --third-font-size : 2rem;
+    --fourth-font-size : 1.313rem;
+    --fifth-font-size: 1rem;
+    --sixth-font-size: 0.5rem;
+}
+
+h1{
+    font-size: var(--main-font-size);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: var(--secondary-font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-size: var(--third-font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    font-size: var(--fourth-font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h5{
+    font-size: var(--fifth-font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h6{
+    font-size: var(--sixth-font-size);
+    margin: 0;
+    padding: 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+
+
+/* navbar section */
+
+
+.navbar__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    z-index: 1000;
+}
+
+.navbar__logo{
+    width: 150px;
+    height: 70px;
+}
+
+.navbar__logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.navbar__menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar__menu ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 5px;
+    line-height: 60px;
+}
+
+.navbar__menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    color: #b5b5b5;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.navbar__menu ul li a:hover{
+    color: var(--main-color);
+}
+
+.navbar__menu ul li a:hover::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+.navbar__menu ul li a span{
+    font-size: 1.1rem;
+    padding: 15px 15px;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.mobile{
+    display: none;
+}
+
+.mobile i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* media screen */
+@media (max-width:1100px){
+  .navbar__section{
+    height: auto;
+    align-items: flex-start;
+  }
+
+    .mobile{
+        padding-top: 20px;
+        display: block;
+        z-index: 1003;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 120px 0;
+        height: auto;
+        position: fixed;
+        top: -650px;
+        left: 0;
+        right: 0;
+        /* padding: 0px 0 0 30px; */
+        transition: all 0.5s ease-in-out;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+        z-index: 1002;
+    }
+
+    #menu.active{
+        top: 0;
+    }
+
+    #close-nav-btn{
+        display: none;
+        transition: all 0.5s ease-in-out;
+    }
+}
