@@ -116,12 +116,16 @@ h6{
     left: 80px;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: var(--main-color);
+    background-color: #8844d0;
     z-index: 90000000;
     color: #fff;
     font-size: 1.5rem;
     display: none;
     transition: all 0.5s ease-in-out;
+}
+
+.fixed__box .fixed__logo:hover{
+    background-color: var(--main-color);
 }
 
 .fixed__box i.active{
