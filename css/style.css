@@ -325,6 +325,7 @@ h6{
         display: block;
         margin: 5px auto;
     }
+
 }
 
 
@@ -376,6 +377,13 @@ h6{
 }
 
 
+@media (max-width:999px){
+    .hero__section {
+        margin: 208px auto;
+    }
+}
+
+
 /* =================================== WORK SECTION ================================ */
 
 .process__sectioon{
@@ -404,6 +412,11 @@ h6{
     left: 0;
 }
 
+@media (max-width:999px){
+    .process__sectioon{
+        margin: 100px auto;
+    }
+}
 
 /* ====================== work section ====================== */
 .work__block__description p{
@@ -427,6 +440,15 @@ h6{
     color: var(--secondary-color);
     font-size: 6rem;
     text-align: center;
+}
+
+
+@media (max-width:999px){
+    .review__section{
+        height: auto;
+        padding: 20px;
+    }
+    
 }
 
 
@@ -516,6 +538,8 @@ h6{
 }
 
 
+
+
 /* ======================= COMPARISON SECTION ========================== */
 .comparison__section__heading h2{
     padding-left: 100px;
@@ -534,7 +558,26 @@ h6{
 }
 
 
+/* ======================= PRICING SECTION ========================== */
+
+.pricing__section {
+    margin-top: 50px;
+}
+
+
+@media(max-width:999px){
+    .pricing__section {
+        margin-top: 100px;
+    }
+}
+
+
 /* ======================== CONTACT SECTION ============================ */
+
+.communication__details{
+    margin-top: 80px;
+}
+
 .contact__section{
     margin: 130px auto;
 }
@@ -551,6 +594,19 @@ h6{
     color: #a2a2a2;
 }
 
+
+@media (max-width:999px){
+
+    .communication__details{
+        margin-top: 160px;
+    }
+
+
+    .contact__section{
+        margin: 50px auto;
+    }
+    
+}
 
 /* ========================= FOOTER SECTION ========================= */
 .bg__one{
